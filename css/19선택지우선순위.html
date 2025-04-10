@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* id, class(pseudo), element */
+        h1{
+            background-color: skyblue;
+        }
+        .head{
+            background-color: beige;
+        }
+        .head.note{
+            background-color: yellow;
+        }
+        #header1{
+            background-color: blue;
+        }
+        .head.note:hover{
+            background-color: orange;
+        }
+        #header1.head{
+            background-color: gold;
+        }
+        /* 같은 점수면 아래에 있는 것 */
+        .head{
+            background-color: hotpink;
+        }
+        h1:hover{
+           box-shadow: 0px 6px 12px; 
+      
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <h1 class="head">Cum.</h1>
+    <h1 class="head note">Doloremque!</h1>
+    <h1 id="header1" class="head note">Iste.</h1>
+    <h1>Sint?</h1>
+    <h1>Aut.</h1>
+    <h1>Debitis!</h1>
+    <h1>Delectus!</h1>
+    <h1>Corrupti.</h1>
+    <h1>Cumque!</h1>
+</body>
+</html>

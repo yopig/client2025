@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 200px;
+            height: 100px;
+            border: 5px black solid;
+        }
+        h1:nth-child(odd){
+            background-color: orange;
+        }
+        h1:nth-child(even){
+            background-color: deepskyblue;
+        }
+        #head1{
+            /* 컨텐트영역 테두리 사이 간격 */
+            padding: 10px;
+        }
+        /* #head2의 패딩 15px */
+        #head2{
+            padding: 15px
+        }
+        #head3{
+            padding-top: 15px;
+        }
+        #head4{
+            padding-bottom: 15px;
+        }
+        #head5{
+            padding-left: 15px;
+        }
+        #head6{
+            padding-right: 15px;
+        }
+        #head7{
+            padding-top: 5px;
+            padding-right: 7px;
+            padding-left: 11px;
+            padding-bottom: 9px;
+        }
+        #head8{
+            /* 위 오른쪽 아래 왼쪽 */
+            padding : 12px 14px 16px 18px;
+        }
+        #head9{
+            padding : 3px 5px 7px;
+        }
+        #head10{
+            padding : 5px 8px
+        }
+        h3{
+            border: solid 7px black;
+        }
+        h3:nth-child(odd){
+            background-color: red;
+        }
+        h3:nth-child(even){
+            background-color: blue;
+        }
+        #head11{
+            padding : 10px
+        }
+        #head12{
+            padding-top: 11px;
+        }
+        #head13{
+            padding-bottom: 13px;
+        }
+        #head14{
+            padding-left: 15px;
+        }
+        #head15{
+            padding-right: 17px;
+        }
+        #head16{
+            padding:12px 20px
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Placeat.</h1>
+    <h1 id="head3">Odit.</h1>
+    <h1 id="head4">Aut.</h1>
+    <h1 id="head5">Repudiandae.</h1>
+    <h1 id="head6">Rerum?</h1>
+    <h1 id="head7">Reprehenderit.</h1>
+    <h1 id="head8">Vitae.</h1>
+    <h1 id="head9">Commodi.</h1>
+    <h1 id="head10">Id?</h1>
+<hr>
+<!-- h3 홀수번째 배경 red -->
+<!-- h3 짝수번째 배경 blue -->
+<!-- h3 의 테두리 7px -->
+
+  <!-- 4방향 패딩 10px -->
+    <h3 id="head11">Lorem.</h3>
+    <!-- 위 패딩 11px -->
+    <h3 id="head12">Repellat.</h3>
+    <!-- 아래 패딩 13px -->
+    <h3 id="head13">Maiores?</h3>
+    <!-- 왼쪽 패딩 15px -->
+    <h3 id="head14">Corrupti!</h3>
+    <!-- 오른쪽 패딩 17px -->
+    <h3 id="head15">Doloribus!</h3>
+    <!-- 좌우 20px, 상하 12px -->
+    <h3 id="head16">Nesciunt.</h3>
+    <h3 id="head17">Eveniet.</h3>
+    <h3 id="head18">Maiores.</h3>
+    <h3 id="head19">Dolorum.</h3>
+    <h3 id="head20">Minima?</h3>
+    
+</body>
+</html>

@@ -2,25 +2,83 @@
 <html>
 <head>
     <style>
-        p{
-            color : blue;
+        /* 전체 폰트 및 배경 스타일 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
+
+        /* p 요소 스타일: 텍스트 색상 및 마진 설정 */
+        p {
+            color: #2c3e50;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 15px 0;
+            padding: 12px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.56); /* 부드러운 그림자 */
+            transition: transform 0.5s ease, box-shadow 0.3s ease; /* 호버 효과를 위한 전환 */
+        }
+
+        p:hover {
+            transform: translateY(-5px); /* 호버 시 부드러운 떠오르는 효과 */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* 강조된 그림자 */
+        }
+
+        /* h1 바로 다음 p 요소 */
         h1 + p {
-            background-color: gold;
+            background: linear-gradient(45deg, #ff9f00, #ff6f00); /* 고급스러운 그라데이션 배경 */
+            color: #fff;
+            border: 2px solid #e67e22;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
         }
-        h1~p {
-            border: 1px solid black;
+
+        /* h1 이후 모든 p 요소에 적용될 스타일 */
+        h1 ~ p {
+            border: 1px solid #ccc;
+            padding: 12px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #34495e;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        div > p{
-            border : dotted 5px yellow;
+
+        /* div 내부의 p 요소 스타일 */
+        div > p {
+            padding: 20px;
+            border: 3px solid #f39c12;
+            background-color: #fff;
+            color: #2c3e50;
+            border-radius: 15px;
+            font-weight: bold;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
         }
-        div~p{
-            background-color: green;
+
+        /* div 이후 모든 p 요소에 적용될 스타일 */
+        div ~ p {
+            background-color: #27ae60; /* 고급스러운 초록색 배경 */
+            color: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <p>Lorem.</p>
     <h1>Lorem.</h1>
     <p>Lorem, ipsum dolor.</p>
     <p>Porro, officia ipsum?</p>
