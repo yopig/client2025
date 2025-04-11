@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            padding: 16px;
+        }
+        div:nth-child(even){
+            background-color: beige;
+        }
+        div:nth-child(odd){
+            background-color: skyblue;
+        }
+#item1{
+    display : block;
+}
+#item2{
+    display: inline;
+}
+#item3{
+    display: inline;
+}
+#item4{
+    display: none;
+}
+#item8:hover + #item9{
+display: block;
+}
+#item9{
+    display: none;
+}
+#item6{
+    opacity: 0.11;
+}
+#item5{
+    opacity: 1;
+}
+#item7{
+    opacity: 0.5;
+}
+    </style>
 </head>
 <body>
-    
+    <div id="item1">1</div>
+    <div id="item2">2</div>
+    <div id="item3">3</div>
+    <div id="item4">4</div>
+    <div id="item5">5</div>
+    <div id="item6">6</div>
+    <div id="item7">7</div>
+    <div id="item8">8</div>
+    <div id="item9">9</div>
 </body>
 </html>
