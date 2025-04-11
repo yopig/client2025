@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        con{
+            display: flex;
+            background-color: gold;
+            margin-bottom: 10px;
+            height: 70px;
+        }
+        .item:nth-child(odd){
+            background-color: skyblue;
+        }
+        .item:nth-child(even){
+            background-color: brown;
+        }
+        #con1>.item,
+        #con2>.item,
+        #con3>.item{
+            width: 30px;
+        }
+        #gap{
+            flex : 1;
+        }
+        #con2>.item:nth-child(2){
+            margin-right: auto;
+        }
+        #con3>.item:nth-child(3){
+            margin-left: auto;
+        }
+        #con4>.item:nth-child(4){
+            margin: auto
+        }
+        #con4>.item{
+            height: 10px;
+            width: 200px;
+        }
+        #con4>.item:nth-child(5){
+           justify-content: end;
+        }
+    </style>
+</head>
+<body>
+    <con id="con1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div id="gap"></div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con5">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con6">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con7">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con8">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con9">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con10">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+</body>
+</html>

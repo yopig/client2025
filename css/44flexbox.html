@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        con{
+            display: flex;
+            background-color: gold;
+            margin-bottom: 10px;
+            height: 70px;
+        }
+        .item:nth-child(odd){
+            background-color: skyblue;
+        }
+        .item:nth-child(even){
+            background-color: brown;
+        }
+        #con1>.item:nth-child(5){
+            flex: 1;
+        }
+        #con2>.item:nth-child(2){
+            flex : 1;
+        }
+        #con4>.item:nth-child(4){
+            flex : 3;
+        }
+        #con3>.item:nth-child(4),
+        #con3>.item:nth-child(5){
+        flex : 1;
+        }
+        #con4>.item:nth-child(5)
+        {
+            flex : 2;
+        }
+        #con5>.item{
+            flex : 1;
+        }
+        #con6>.item:nth-child(1),
+        #con6>.item:nth-child(5){
+            width: 70px;
+        }
+        #con6>.item:nth-child(3){
+            flex : 1;
+        }
+        #con7>.item:nth-child(3){
+            flex: 1;
+        }   
+        #con7>.item:nth-child(1),
+        #con7>.item:nth-child(2),
+        #con7>.item:nth-child(4),
+        #con7>.item:nth-child(5){
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <con id="con1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con5">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con6">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con7">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con8">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con9">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+    <con id="con10">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </con>
+</body>
+</html>

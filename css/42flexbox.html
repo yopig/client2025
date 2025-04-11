@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: flex;
+            background-color: gold;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        item:nth-child(odd){
+            background-color: skyblue;
+        }
+        item:nth-child(even){
+            background-color: brown;
+        }
+        #con1{
+            align-items: stretch;
+        }
+        #con2{
+            align-items: start;
+        }
+        #con3{
+            align-items: end;
+        }
+        #con4{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="con" id="con1">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </div>
+    <hr>
+    <div class="con" id="con2">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </div>
+    <hr>
+    <div class="con" id="con3">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </div>
+    <hr>
+    <div class="con" id="con4">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </div>
+</body>
+</html>
