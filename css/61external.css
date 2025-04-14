@@ -1,0 +1,14 @@
+.gold-button{
+    background-color: gold;
+    padding: 15px;
+}
+.gold-button:hover{
+    background-color: coral;
+}
+.red-button{
+    padding: 15px;
+    background-color: red;
+}
+.red-button:hover{
+    background-color: aqua;
+}

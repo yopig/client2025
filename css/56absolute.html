@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            width: 150px;
+            font-size: 20px;
+            display: none;
+            position: absolute;
+            background-color: wheat;
+            top : 5px;
+            left:  0px;
+            border: 1px solid gray;
+        }
+        h3:hover{
+            display: block;
+        }
+        h1:hover + h3{
+            display: block;
+        }
+        .container{
+            width: 200px;
+            font-size: 10px;
+            position: relative;
+        }
+        .con>#a:hover{
+            background-color: gray;
+        }
+        .con>#b:hover{
+            background-color: gray;
+        }
+        .con>#c:hover{
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <h1>Hover Over Me.</h1>
+    <h3 class="con">
+    <div id="a">Link 1</div>
+    <div id="b">Link 2</div>
+    <div id="c">Link 3</div>
+</h3>   
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta velit sed ipsam, quisquam voluptatibus quibusdam pariatur, amet corrupti deserunt porro, distinctio minus eligendi repudiandae aut harum molestias quae veritatis hic.</p>
+</div>
+</body>
+</html>
