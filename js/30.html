@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+</style>
+키<input type="text" id="input1">
+<hr>
+<button id="btn" class="btn-secondary">평가</button>
+<hr>
+<h3 id="result"></h3>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+     function check(){
+        let ki = document.querySelector("#input1").value;
+        ki = Number(ki)
+
+        if (ki < 130){
+            document.querySelector("#result").innerText = "놀이기구 탑승 금지";
+        }
+        else (ki >= 130)
+            document.querySelector("#result").innerHTML = "놀이기구 탑승 가능"
+    }
+    document.querySelector("button").onclick = check;
+</script>
+  </body>
+</html>
