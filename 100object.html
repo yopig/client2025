@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+</style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+    let b = "hi";
+    let c = 'hola';
+    let d = "안녕하세요";
+    let address = 'jeju';
+    let a = {
+        print : function(a){
+            console.log(a);
+
+
+        },
+        show : function(b){
+            console.log(b);
+            console.log(c);
+            console.log(d);
+            
+            
+        }, 
+        display: function(c){
+            // let address = "busan"
+            console.log(c);
+            console.log(address);
+            console.log(this.address);
+            
+            
+        }
+    }
+    a.print(33);
+    a.show("hello");
+    a.display("곤니치와");
+
+    let e = {
+        firstname : 'eion',
+        lastname : 'musk',
+        // 일반 함수 this : 이 메소드를 가진 객체
+        printfullname : function(){
+            console.log(this.firstname,this.lastname);
+        }
+    }
+    e.printfullname();
+
+    window.firstname = '알베르트';
+    window.lastname = '아인슈타인';
+
+    let firstname = "알버트";
+    let lastname = '아인슈타인';
+
+   
+    let f = {
+        firstname : 'donald',
+        lastname : 'trump',
+        // arrow function의 this : 정의 될 때의 전개
+        printfullname : () =>{
+            console.log(this.firstname,this.lastname);
+            
+        }
+    }
+    f.printfullname();
+
+</script>
+  </body>
+</html>

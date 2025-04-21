@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+</style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+    // array sort 메소드
+    // 각 원소를 오름차순으로 정렬(원본 배열 내에서)
+    // 원본 배열의 참조 리턴
+    /// 각 원소를 string으로 변환
+    let a =[1,3,21,1000];
+    a.sort();
+    console.log(a);
+    
+    //sort 메소드는 함수를 피라미터로 받을 수 있음
+    //  정렬할때 파라미터로 받은 함수를 활용함.
+
+    //
+    let fun1 = function(a, b){
+        return a - b;
+     }
+        a.sort(fun1);
+        console.log(a);
+    a.sort((a,b) => a-b);
+    console.log(a);
+    
+    let b = [6, 1, 3, 9, -1, 0 , -2]
+    let fun2= function(a,b){
+        return a - b;
+    }
+    b.sort(fun2);
+    console.log(b);
+    //큰 수가 나중에 오도록 정렬
+
+    //작은 수가 나중에 오도록 정렬
+   
+    let fun3 = function(a,b){
+        return b - a;
+    }
+    b.sort(fun3);
+    console.log(b);
+        
+</script>
+  </body>
+</html>
