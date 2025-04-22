@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+</style>
+  </head>
+  <body>
+    <button id="btn1">box에 마지막 자식 추가</button>
+    <button id="btn2">box에 첫번째 자식 추가</button>
+    <button id="btn3">box에 다음 형제 추가</button>
+    <button id="btn4">box에 이전 형제 추가가</button>
+    <div id="box"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+     //append 박스에 마지막
+    document.querySelector('#btn1').addEventListener('click', function(){
+    let elem = document.createElement('h1')
+    document.querySelector('#box').append(elem);
+});
+
+        //prepend 박스에 첫번째
+        document.querySelector('#btn2').addEventListener('click', function(){
+    let elem = document.createElement('h2')
+    document.querySelector('#box').prepend(elem);
+});
+
+        //after 박스에 다음 형제
+        document.querySelector('#btn3').addEventListener('click', function(){
+    let elem = document.createElement('h3')
+    document.querySelector('#box').after(elem);
+});
+        //before 박스에 이전 형제
+        document.querySelector('#btn4').addEventListener('click', function(){
+    let elem = document.createElement('h4')
+    document.querySelector('#box').before(elem);
+});
+</script>
+  </body>
+</html>

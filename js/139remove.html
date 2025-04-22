@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+</style>
+  </head>
+  <body>
+    <h1 id="head1">Lorem.<button id="btn1">지우기</button></h1>
+    <h1 id="head2">Architecto!<button id="btn1">지우기</button></h1>
+    <h1 id="head3">Voluptatibus!<button id="btn1">지우기</button></h1>
+    <h1 id="head4">Voluptatum.<button id="btn1">지우기</button></h1>
+    <h1 id="head5">Dolore.<button id="btn1">지우기</button></h1>
+    <h1 id="head6">Eaque?<button id="btn1">지우기</button></h1>
+    <h1 id="head7">Quod?<button id="btn1">지우기</button></h1>
+    <h1 id="head8">Asperiores!<button id="btn1">지우기</button></h1>
+    <h1 id="head9">Iusto.<button id="btn1">지우기</button></h1>
+    <h1 id="head10">Eveniet!<button id="btn1">지우기</button></h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+    let buttons = document.querySelectorAll('button');
+    for (let i = 0; i < buttons.length; i++ ){
+        buttons[i].addEventListener("click", function(){
+            buttons[i].parentElement.remove();
+        })
+    }
+</script>
+  </body>
+</html>

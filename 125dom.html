@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+</style>
+  </head>
+  <body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Numquam!</h1>
+    <h1 id="head3">Impedit?</h1>
+    <h1 id="head4">Alias.</h1>
+    <h1 id="head5">Nesciunt!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+    //dom에서 id로 element 찾기
+    // document의 getElementbyId
+    // 특정 아이디로 element 객체를 리턴
+
+    let a = document.getElementById('head1');
+    let b = document.getElementById('head2');
+    console.log(a);
+    console.log(b);
+    console.log(document.getElementById("head3"));
+
+    // document의 get
+    a.innerText = 'hello dom';
+    b.innerText = 'hi odject';
+
+    //연습
+    //아이디가 head5인 요소를 찾아서 출력
+    // 아이디가 head5인 텍스트를 hello javascript로 변경
+
+    let c = document.getElementById("head5");
+    c.innerText = 'hello javascript';
+    
+    
+    
+</script>
+  </body>
+</html>
